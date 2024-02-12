@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: "Poppins", sans-serif;
+}
+.yes {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #ff4cff;
+  appearance: none;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+}
+.yes:checked {
+  background-color: #ff4cff;
+}
+.bg_color {
+  background: linear-gradient(180deg, rgba(36, 2, 70, 0) 32.92%, #240246 91.26%),
+    #0b0015;
+}

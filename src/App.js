@@ -1,8 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Signin from "./page/Signin";
+import Signup from "./page/Signup";
+import Home from "./Home";
 function App() {
-  return <h1 className="text-[50px] font-bold text-center ">hello world</h1>;
+  return (
+    <>
+      <Routes>
+        <Route>
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+
+          <Route path="/" element={<Home />} />
+        </Route>
+      </Routes>
+    </>
+  );
 }
 
 export default App;
