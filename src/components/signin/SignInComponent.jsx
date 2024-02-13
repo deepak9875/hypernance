@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const SignInComponent = () => {
   const [pass, setPass] = useState(false);
   return (
-    <div className="w-full max-w-[1920px] mx-auto h-screen flex md:flex-row flex-col bg-[#F7F7F7]">
-      <div className="md:w-[50%] w-full h-[60%] md:h-full mx-auto bg_color flex  justify-center p-10 md:items-center">
+    <div className="w-full max-w-[1920px] mx-auto md:h-screen flex md:flex-row flex-col bg-[#F7F7F7]">
+      <div className="md:w-[50%] w-full h-[575px] md:h-full mx-auto bg_color flex  justify-center p-10 md:items-center">
         <div className="flex flex-col gap-3 md:gap-[63px] ">
           <img
             className="md:max-w-[438px] max-w-[179px] w-full"
@@ -23,8 +23,8 @@ const SignInComponent = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[50%] w-full h-[40%] md:h-full mx-auto flex justify-center items-center p-5">
-        <div className="lg:p-10 px-5 py-10 rounded-[20px] bg-white max-w-[423px] w-full max-md:translate-y-[-100px]">
+      <div className="md:w-[50%] w-full  md:h-full mx-auto flex justify-center items-center p-5">
+        <div className="lg:p-10 px-5 py-10 rounded-[20px] bg-white max-w-[423px] w-full max-md:translate-y-[-140px]">
           <form action="">
             <div className="flex flex-col gap-[7px]">
               <h2 className="text-[#040707] text-[24px] font-bold leading-[32px]">
@@ -72,9 +72,12 @@ const SignInComponent = () => {
                   Remember me
                 </label>
               </div>
-              <p className="text-[#FF4CFF] text-[14px] sm:text-[16px] font-bold leading-[24px]">
+              <Link
+                to={`#`}
+                className="text-[#FF4CFF] text-[14px] sm:text-[16px] font-bold leading-[24px]"
+              >
                 Forgot Password?
-              </p>
+              </Link>
             </div>
             <button
               type="submit"
