@@ -18,12 +18,14 @@ const DashboardTableList = ({ item }) => {
           <h2 className="text-[#8D8D8D] text-[11px] font-normal">Amount</h2>
           <p className=" text-[12px] font-normal">{item.amount}</p>
         </td>
-        <button
-          type="submit"
-          className="w-[90px] h-[30px] group-hover:border-white border group-hover:text-white text-[#040707] border-[#040707] rounded-[7px] text-[13px] font-normal"
-        >
-          Invoice
-        </button>
+        <td>
+          <button
+            type="submit"
+            className="w-[90px] h-[30px] group-hover:border-white border group-hover:text-white text-[#040707] border-[#040707] rounded-[7px] text-[13px] font-normal"
+          >
+            Invoice
+          </button>
+        </td>
       </tr>
     </>
   );
