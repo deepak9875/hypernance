@@ -46,29 +46,29 @@ const Sidebar = ({ active, setActive }) => {
           <div className="flex mt-[22px] pr-4 flex-col ">
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Dashboardicon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
                     Dashboard{" "}
                   </h1>
                 </div>
-              </button>
+              </div>
             </div>
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Invoicesicon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
                     Invoices{" "}
                   </h1>
                 </div>
-              </button>
+              </div>
             </div>
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Messagesicon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
@@ -78,66 +78,66 @@ const Sidebar = ({ active, setActive }) => {
                 <button className="bg-[#FF4CFF] h-[21px] w-[21px] rounded-full text-[13px] font-medium text-white">
                   5
                 </button>
-              </button>
+              </div>
             </div>
 
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Walleticon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
                     My Wallets
                   </h1>
                 </div>
-              </button>
+              </div>
             </div>
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Activityicon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
                     Activity
                   </h1>
                 </div>
-              </button>
+              </div>
             </div>
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Analyticsicon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
                     Analytics
                   </h1>
                 </div>
-              </button>
+              </div>
             </div>
           </div>
           <div className="flex   flex-col pr-4">
             {" "}
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Geticon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
                     Get Help
                   </h1>
                 </div>
-              </button>
+              </div>
             </div>
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <button className="w-full  gap-1 px-[15px] py-3 items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
                   <Settingsicon />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
                     Settings
                   </h1>
                 </div>
-              </button>
+              </div>
             </div>
           </div>
         </div>
