@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../Assets/img/logo.png";
+import logo from "../assets/img/logo.png";
 import { Eye2icon, Eyeicon, Passwordicon, Usericon } from "../common/icon";
 import { Link } from "react-router-dom";
 const SignInComponent = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Datepicker from "../common/Datepicker";
 import { Eye2icon, Eyeicon, Passwordicon } from "../common/icon";
-import logo from "../Assets/img/logo.png";
+import logo from "../assets/img/logo.png";
 import { Link } from "react-router-dom";
 
 const SignUpComponent = () => {

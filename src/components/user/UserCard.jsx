@@ -1,5 +1,5 @@
 import React from "react";
-import userImg from "../Assets/img/user-img.png";
+import userImg from "../assets/img/user-img.png";
 import { DeleteIcon, EditIcon } from "../common/icon";
 const UserCard = () => {
   return (
