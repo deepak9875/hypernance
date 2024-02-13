@@ -131,11 +131,17 @@ const SignUpComponent = () => {
                     className="text-[#040707] cursor-pointer text-[14px] sm:text-[16px] font-normal leading-[24px]"
                   >
                     By tapping Apply you agree and consent to our{" "}
-                    <Link to={`#`} className="text-[#FF4CFF] underline">
-                      Terms of Service
+                    <Link
+                      to={`#`}
+                      className="text-[#FF4CFF] hover:text-[#FF4CFF]/50 transition duration-300 ease-in-out underline"
+                    >
+                      Terms of Service{" "}
                     </Link>
                     and{" "}
-                    <Link to={`#`} className="text-[#FF4CFF] underline">
+                    <Link
+                      to={`#`}
+                      className="text-[#FF4CFF] hover:text-[#FF4CFF]/50 transition duration-300 ease-in-out underline"
+                    >
                       {" "}
                       Privacy policy
                     </Link>
@@ -144,13 +150,16 @@ const SignUpComponent = () => {
               </div>
               <button
                 type="submit"
-                className="text-white text-[16px] font-bold leading-[24px] w-full p-4 mt-8 bg-[#FF4CFF] rounded-[8px]"
+                className="text-white text-[16px] font-bold leading-[24px] w-full p-4 mt-8 bg-[#FF4CFF] border border-[#FF4CFF] hover:bg-transparent hover:text-[#FF4CFF] transition duration-300 ease-in-out rounded-[8px]"
               >
                 Sign Up
               </button>
               <p className="text-[#6B7280] text-center text-[16px] mt-6 font-normal leading-[24px]">
                 Already have an account?{" "}
-                <Link to={`/signin`} className="text-[#FF4CFF] font-semibold">
+                <Link
+                  to={`/signin`}
+                  className="text-[#FF4CFF] transition duration-300 ease-in-out hover:text-[#FF4CFF]/50 font-semibold"
+                >
                   Sign In
                 </Link>
               </p>

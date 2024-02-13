@@ -64,30 +64,38 @@ const SignInComponent = () => {
             </div>
             <div className="flex w-full flex-wrap justify-between mt-3">
               <div className="flex gap-3 items-center">
-                <input type="radio" name="" id="remember" className="yes" />
+                <input
+                  type="radio"
+                  name=""
+                  id="remember"
+                  className="yes cursor-pointer"
+                />
                 <label
                   htmlFor="remember"
-                  className="text-[#040707] text-[14px] sm:text-[16px] font-normal leading-[24px]"
+                  className="text-[#040707] cursor-pointer text-[14px] sm:text-[16px] font-normal leading-[24px]"
                 >
                   Remember me
                 </label>
               </div>
               <Link
                 to={`#`}
-                className="text-[#FF4CFF] text-[14px] sm:text-[16px] font-bold leading-[24px]"
+                className="text-[#FF4CFF] hover:text-[#FF4CFF]/50 transition duration-300 ease-in-out text-[14px] sm:text-[16px] font-bold leading-[24px]"
               >
                 Forgot Password?
               </Link>
             </div>
             <button
               type="submit"
-              className="text-white text-[16px] font-bold leading-[24px] w-full p-4 mt-8 bg-[#FF4CFF] rounded-[8px]"
+              className="text-white text-[16px] border border-[#FF4CFF] hover:text-[#FF4CFF] hover:bg-transparent transition duration-300 ease-in-out font-bold leading-[24px] w-full p-4 mt-8 bg-[#FF4CFF] rounded-[8px]"
             >
               Sign In
             </button>
             <p className="text-[#6B7280] text-center text-[16px] mt-6 font-normal leading-[24px]">
               Don’t have an account?{" "}
-              <Link to={`/signup`} className="text-[#FF4CFF] font-semibold">
+              <Link
+                to={`/signup`}
+                className="text-[#FF4CFF] transition duration-300 ease-in-out hover:text-[#FF4CFF]/50 leading-6 font-semibold"
+              >
                 Sign Up
               </Link>
             </p>

@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AllUserCards from "./components/user/AllUserCards";
 import Layout from "./components/common/Layout";
+import AllDashboard from "./components/dashboard/AllDashboard";
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <Layout>
+      <AllDashboard />
       <div className="flex gap-3 justify-center mt-10">
         <Link to={`/signin`}>
           <button className="w-[200px] h-[48px] rounded-lg bg-black text-white">
@@ -18,9 +20,8 @@ const Home = () => {
           </button>
         </Link>
       </div>
-      {/* <AllUserCards /> */}
     </Layout>
   );
 };
 
-export default Home;
+export default Dashboard;

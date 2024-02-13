@@ -22,3 +22,20 @@ body {
   background: linear-gradient(180deg, rgba(36, 2, 70, 0) 32.92%, #240246 91.26%),
     #0b0015;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.background-join {
+  background-image: url("./components/assets/img/join-bg.png");
+}
+.background-join2 {
+  background-image: url("./components/assets/img/join-bg2.png");
+}
