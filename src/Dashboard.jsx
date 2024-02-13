@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AllUserCards from "./components/user/AllUserCards";
+// import AllUserCards from "./components/user/AllUserCards";
 import Layout from "./components/common/Layout";
 import AllDashboard from "./components/dashboard/AllDashboard";
 
