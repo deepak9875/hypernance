@@ -28,7 +28,7 @@ const SignUpComponent = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[50%]  relative w-full h-full  mx-auto flex justify-center  items-center max-md:mt-[-247px] p-5">
+      <div className="md:w-[50%]  relative w-full h-full   mx-auto flex justify-center  items-center max-md:mt-[-247px] p-5">
         <div className="max-w-[423px]  w-full mx-auto h-[96%] p-2 py-10 2xl:p-7    rounded-[20px] flex justify-center  items-center bg-white ">
           <div className="md:h-full px-3    overflow-auto ">
             <form action="">
