@@ -1,9 +1,9 @@
 import React from "react";
 import userImg from "../assets/img/user-img.png";
-import { DeleteIcon, EditIcon } from "../common/icon";
+import { CallIcon, DeleteIcon, EditIcon } from "../common/icon";
 const UserCard = () => {
   return (
-    <div className="max-w-[267px] w-full bg-white border border-[rgba(0,0,0,0.10)]">
+    <div className="max-w-[267px] rounded-[10px] w-full p-6 bg-white border border-[rgba(0,0,0,0.10)]">
       <div className="flex justify-between">
         <img
           className="w-[82px] h-[82px] rounded-[50%] "
@@ -19,6 +19,12 @@ const UserCard = () => {
         Jordan Stlouis
       </p>
       <div className="w-full h-[1px] my-6 bg-black/10"></div>
+      <div>
+        <span>
+          <CallIcon />
+        </span>
+        <span className="">(684) 555-0102</span>
+      </div>
       <div></div>
     </div>
   );
