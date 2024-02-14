@@ -20,7 +20,7 @@ const SignUpComponent = () => {
           />
           <div className="flex flex-col text-center gap-[7px]">
             <h1 className="text-white text-[48px] font-bold leading-[58px]">
-              Hi!{" "}
+              Hello!
             </h1>
             <p className="text-[#EBEBEB] text-[16px] font-normal leading-[24px]">
               Welcome to Hypernance
