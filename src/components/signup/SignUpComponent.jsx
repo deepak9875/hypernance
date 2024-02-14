@@ -3,6 +3,7 @@ import Datepicker from "../common/Datepicker";
 import { Eye2icon, Eyeicon, Passwordicon } from "../common/icon";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-router-dom";
+import Administrator from "../signin/Administrator";
 
 const SignUpComponent = () => {
   const [pass, setPass] = useState(false);
@@ -27,8 +28,8 @@ const SignUpComponent = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[50%]  relative w-full h-full  mx-auto flex justify-center  items-center  p-5">
-        <div className="max-w-[423px]  w-full mx-auto h-[80%] 2xl:h-fit p-2 2xl:p-7  max-md:translate-y-[-160px]  rounded-[20px] flex justify-center  items-center bg-white ">
+      <div className="md:w-[50%]  relative w-full h-full  mx-auto flex justify-center  items-center max-md:mt-[-247px] p-5">
+        <div className="max-w-[423px]  w-full mx-auto h-[90%] p-2 py-10 2xl:p-7    rounded-[20px] flex justify-center  items-center bg-white ">
           <div className="md:h-full px-3   2xl:h-full flex 2xl:items-center overflow-auto ">
             <form action="">
               <div>
@@ -40,7 +41,7 @@ const SignUpComponent = () => {
                   Welcome, let’s get you started!
                 </p>
               </div>
-              <div className="mt-[24px] flex  justify-between gap-2">
+              <div className="mt-6 flex  justify-between gap-2">
                 <div className="max-w-[162px] w-full ">
                   <label
                     htmlFor=""
@@ -68,7 +69,7 @@ const SignUpComponent = () => {
                   />
                 </div>
               </div>
-              <div className="mt-[16px]">
+              <div className="mt-4">
                 <label
                   htmlFor=""
                   className=" text-[#040707] text-[13px] font-medium "
@@ -83,6 +84,15 @@ const SignUpComponent = () => {
               </div>
               <div>
                 <Datepicker />
+              </div>
+              <div className="flex gap-2 mt-4 flex-col">
+                <label
+                  htmlFor=""
+                  className="text-[#040707] text-[13px] font-medium"
+                >
+                  Assign Role
+                </label>
+                <Administrator />
               </div>
               <div className="w-full rounded-[8px] border flex items-center gap-3 pr-3 border-[#D2D3D6] py-3 pl-4 mt-[24px]">
                 <span>

@@ -39,3 +39,41 @@ body {
 .background-join2 {
   background-image: url("./components/assets/img/join-bg2.png");
 }
+.dates_picker .react-datepicker__header {
+  background-color: #ff4cff !important;
+  color: white !important;
+}
+.dates_picker .react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: white !important;
+}
+.dates_picker
+  .react-datepicker__header
+  .react-datepicker__day-names
+  .react-datepicker__day-name,
+.react-datepicker__day .react-datepicker__time-name {
+  color: white !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff4cff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

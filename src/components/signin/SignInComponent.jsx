@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/img/logo.png";
 import { Eye2icon, Eyeicon, Passwordicon, Usericon } from "../common/icon";
 import { Link } from "react-router-dom";
+import Administrator from "./Administrator";
 const SignInComponent = () => {
   const [pass, setPass] = useState(false);
   return (
@@ -9,22 +10,22 @@ const SignInComponent = () => {
       <div className="md:w-[50%] w-full h-[575px] md:h-full mx-auto bg_color flex  justify-center p-10 md:items-center">
         <div className="flex flex-col gap-3 md:gap-[63px] ">
           <img
-            className="md:max-w-[438px] max-w-[179px] w-full"
+            className="md:max-w-[438px] mx-auto max-w-[179px] w-full"
             src={logo}
             alt="logo"
           />
           <div className="flex flex-col text-center gap-[7px]">
             <h1 className="text-white text-[48px] font-bold leading-[58px]">
-              Hi!{" "}
+              Hello!{" "}
             </h1>
-            <p className="text-[#EBEBEB] text-[16px] font-normal leading-[24px]">
-              Welcome to Hypernance
+            <p className="text-[#EBEBEB] max-w-[283px] sm:max-w-full w-full text-[16px] font-normal leading-[24px]">
+              Welcome to Hypernance, please sign in.
             </p>
           </div>
         </div>
       </div>
-      <div className="md:w-[50%] w-full  md:h-full mx-auto flex justify-center items-center p-5">
-        <div className="lg:p-10 px-5 py-10 rounded-[20px] bg-white max-w-[423px] w-full max-md:translate-y-[-140px]">
+      <div className="md:w-[50%] w-full  md:h-full mx-auto flex justify-center items-center max-md:mt-[-140px] p-5">
+        <div className="lg:p-10 px-5 py-10 rounded-[20px] bg-white max-w-[423px] w-full ">
           <form action="">
             <div className="flex flex-col gap-[7px]">
               <h2 className="text-[#040707] text-[24px] font-bold leading-[32px]">
@@ -34,8 +35,10 @@ const SignInComponent = () => {
                 Welcome, sign into your account
               </p>
             </div>
-            <div className="flex w-full flex-col mt-9 gap-4">
-              <div className="w-full rounded-[8px] border flex items-center gap-3 pr-1 border-[#D2D3D6] py-3 pl-4">
+            <div className="flex w-full flex-col mt-6 gap-4">
+              <Administrator />
+
+              <div className="w-full rounded-[8px] mt-2 border flex items-center gap-3 pr-1 border-[#D2D3D6] py-3 pl-4">
                 <span>
                   <Usericon />
                 </span>

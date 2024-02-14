@@ -42,7 +42,7 @@ const Datepicker = () => {
           </label>
           <div
             ref={datepickerRef}
-            className="max-w-[373px] w-full py-[12px] px-[20px] font-normal border border-[#D2D3D6] rounded-[8px] mt-[8px]  leading-[24px] flex items-center justify-between"
+            className="max-w-[383px] dates_picker  w-full py-[12px] px-[20px] font-normal border border-[#D2D3D6] rounded-[8px] mt-[8px]  leading-[24px] flex items-center justify-between"
           >
             <DatePicker
               className="w-full outline-none placeholder:text-[13px]"
