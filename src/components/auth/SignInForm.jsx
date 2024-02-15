@@ -3,6 +3,7 @@ import { Eye2icon, Eyeicon, Passwordicon, Usericon } from "../common/icon";
 import { Link } from "react-router-dom";
 import Administrator from "./Administrator";
 import CommonBtn from "../common/CommonBtn";
+
 const SignInForm = () => {
   const [pass, setPass] = useState(false);
 
@@ -29,6 +30,7 @@ const SignInForm = () => {
                 className="outline-none w-full"
                 type="text"
                 placeholder="User Name"
+                required
               />
             </div>
             <div className="w-full rounded-[8px] border flex items-center gap-3 pr-3 border-quaternary py-3 pl-4">
@@ -39,6 +41,7 @@ const SignInForm = () => {
                 className="outline-none w-full"
                 type={`${pass ? "text" : "password"}`}
                 placeholder="Password"
+                required
               />
               <span onClick={() => setPass(!pass)} className="cursor-pointer">
                 {pass ? <Eye2icon /> : <Eyeicon />}
@@ -49,9 +52,9 @@ const SignInForm = () => {
             <div className="flex gap-3 items-center">
               <input
                 type="radio"
-                name=""
                 id="remember"
                 className="yes cursor-pointer"
+                required
               />
               <label
                 htmlFor="remember"
@@ -61,7 +64,7 @@ const SignInForm = () => {
               </label>
             </div>
             <Link
-              to={`#`}
+              to={`/forgot-password`}
               className="text-primary hover:text-primary/50 transition duration-300 ease-in-out text-[14px] sm:text-[16px] font-bold leading-[24px]"
             >
               Forgot Password?

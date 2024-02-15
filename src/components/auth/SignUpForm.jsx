@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import CommonBtn from "../common/CommonBtn";
 import Datepicker from "../common/Datepicker";
 import { Eye2icon, Eyeicon, Passwordicon } from "../common/icon";
-import { Link } from "react-router-dom";
-import Administrator from "../signin/Administrator";
-import CommonBtn from "../common/CommonBtn";
+import Administrator from "./Administrator";
+
 const SignUpForm = () => {
   const [pass, setPass] = useState(false);
   const [password, setPassword] = useState(false);
@@ -11,9 +12,8 @@ const SignUpForm = () => {
     <>
       <div className="max-w-[423px] w-full mx-auto h-[96%] p-2 py-10 2xl:p-7    rounded-[20px] flex justify-center  items-center bg-white ">
         <div className="md:h-full px-3 overflow-auto ">
-          <form action="">
+          <form>
             <div>
-              {" "}
               <h1 className="font-bold text-[24px] text-secondary  leading-[32px] ">
                 Sign Up
               </h1>
@@ -24,12 +24,14 @@ const SignUpForm = () => {
             <div className="mt-6 flex justify-between gap-2">
               <div className="max-w-[162px] w-full ">
                 <label
-                  htmlFor=""
+                  htmlFor="first-name"
                   className="text-secondary text-[13px] font-medium "
                 >
                   First Name
                 </label>
                 <input
+                  required
+                  name="first-name"
                   className="w-full py-[12px] px-[20px] outline-none font-normal border border-quaternary rounded-[8px] mt-[8px] placeholder:text-[13px] leading-[24px]"
                   type="text"
                   placeholder="Enter First Name"
@@ -37,12 +39,14 @@ const SignUpForm = () => {
               </div>
               <div className="max-w-[162px] w-full ">
                 <label
-                  htmlFor=""
+                  htmlFor="last-name"
                   className="text-secondary text-[13px] font-medium "
                 >
                   Last Name
                 </label>
                 <input
+                  required
+                  name="last-name"
                   className="w-full py-[12px] px-[20px] outline-none font-normal border border-quaternary rounded-[8px] mt-[8px] text-[13px] leading-[24px]"
                   type="text"
                   placeholder="Last First Name"
@@ -51,12 +55,13 @@ const SignUpForm = () => {
             </div>
             <div className="mt-4">
               <label
-                htmlFor=""
+                htmlFor="Address"
                 className="text-secondary text-[13px] font-medium "
               >
                 Address
               </label>
               <input
+                name="Address"
                 type="text"
                 placeholder="Address"
                 className="w-full py-[12px] px-[20px] outline-none font-normal border border-quaternary rounded-[8px] mt-[8px] placeholder:text-[13px] leading-[24px]"
@@ -67,7 +72,7 @@ const SignUpForm = () => {
             </div>
             <div className="flex gap-2 mt-4 flex-col">
               <label
-                htmlFor=""
+                htmlFor="assign-role"
                 className="text-secondary text-[13px] font-medium"
               >
                 Assign Role
@@ -105,14 +110,14 @@ const SignUpForm = () => {
             </div>
             <div className="flex w-full flex-wrap justify-between mt-3">
               <div className="flex gap-3 w-full ">
-                <>
+                <div>
                   <input
                     type="radio"
                     name=""
                     id="remember"
                     className="yes !w-4 cursor-pointer rounded-[50%] !h-4 "
                   />
-                </>
+                </div>
                 <label
                   htmlFor="remember"
                   className="text-secondary cursor-pointer text-[14px] sm:text-[16px] font-normal leading-[24px]"

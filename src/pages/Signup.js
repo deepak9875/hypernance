@@ -1,6 +1,6 @@
 import React from "react";
 import HelloSignCommon from "../components/common/HelloSignCommon";
-import SignUpForm from "../components/signup/SignUpForm";
+import SignUpForm from "../components/auth/SignUpForm";
 
 const Signup = () => {
   return (
