@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { PlusIcon } from "../common/icon";
-import img from "../assets/img/teonta-pegues-img.png";
+import img from "../../assets/img/teonta-pegues-img.png";
 export default function Profile() {
   return (
     <div className="w-full mt-[35px]">

@@ -34,10 +34,10 @@ body {
 }
 
 .background-join {
-  background-image: url("./components/assets/img/join-bg.png");
+  background-image: url("./assets/img/join-bg.png");
 }
 .background-join2 {
-  background-image: url("./components/assets/img/join-bg2.png");
+  background-image: url("./assets/img/join-bg2.png");
 }
 .dates_picker .react-datepicker__header {
   background-color: #ff4cff !important;

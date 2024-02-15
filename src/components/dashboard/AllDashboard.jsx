@@ -1,9 +1,9 @@
 import React from "react";
 import MonthDropdown from "../common/MonthDropdown";
-import chart from "../assets/img/chart.png";
-import Expensemap1 from "../assets/img/Expensemap1.png";
-import Expensemap2 from "../assets/img/Expensemap2.png";
-import Expensemap3 from "../assets/img/Expensemap3.png";
+import chart from "../../assets/img/chart.png";
+import Expensemap1 from "../../assets/img/Expensemap1.png";
+import Expensemap2 from "../../assets/img/Expensemap2.png";
+import Expensemap3 from "../../assets/img/Expensemap3.png";
 // import Card from "./common/Card";
 import { Arrowicon, Arrowicon2, Arrowicon3, Rangeicon } from "../common/icon";
 import DashboardTablecard from "./DashboardTableCard";

@@ -1,4 +1,4 @@
-import minilogo from "../assets/img/minilogo.png";
+import minilogo from "../../assets/img/minilogo.png";
 import {
   Activityicon,
   Analyticsicon,

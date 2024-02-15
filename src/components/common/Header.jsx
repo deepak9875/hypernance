@@ -1,5 +1,5 @@
 import { Menuicon, Notficationicon, Searchicon } from "./icon";
-import mainlogo from "../assets/img/jordan-stlouis-img.png";
+import mainlogo from "../../assets/img/jordan-stlouis-img.png";
 import { Link } from "react-router-dom";
 
 const Header = ({ setActive }) => {

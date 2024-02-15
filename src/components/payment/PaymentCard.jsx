@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import profileImg from "../assets/img/profile2.png";
-import profileImg2 from "../assets/img/profile1.png";
+import profileImg from "../../assets/img/profile2.png";
+import profileImg2 from "../../assets/img/profile1.png";
 
-import img from "../assets/img/manplaceholder.png";
-import flag from "../assets/img/flag.png";
-import visa from "../assets/img/visa-img.png";
+import img from "../../assets/img/manplaceholder.png";
+import flag from "../../assets/img/flag.png";
+import visa from "../../assets/img/visa-img.png";
 import { Flag2Icon } from "../common/icon";
 import Profile from "./Profile";
 import SendMoneyDropdown from "./SendMoneyDropdown";
