@@ -46,7 +46,10 @@ const Sidebar = ({ active, setActive }) => {
         </div>
         <div className="flex flex-col mt-[22px] sm:w-[250px] lg:w-full h-[80%]  overflow-auto sm:h-full justify-between sm:pb-[90px]">
           <div className="flex  sm:pr-4 gap-1 flex-col ">
-            <NavLink to={`/`} className="flex items-center group gap-[10px]">
+            <NavLink
+              to={`/`}
+              className="flex items-center group gap-[10px] pr-2"
+            >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
                   router === "/" ? "bg-primary" : ""
@@ -73,7 +76,7 @@ const Sidebar = ({ active, setActive }) => {
             </NavLink>
             <NavLink
               to={`/users`}
-              className="flex items-center group gap-[10px]"
+              className="flex items-center group gap-[10px] pr-2"
             >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
@@ -99,7 +102,10 @@ const Sidebar = ({ active, setActive }) => {
                 </div>
               </div>
             </NavLink>
-            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+            <NavLink
+              to={`#`}
+              className="flex items-center group gap-[10px] pr-2"
+            >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
                   router === "#" ? "bg-primary" : ""
@@ -127,7 +133,10 @@ const Sidebar = ({ active, setActive }) => {
                 </button>
               </div>
             </NavLink>
-            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+            <NavLink
+              to={`#`}
+              className="flex items-center group gap-[10px] pr-2"
+            >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
                   router === "#" ? "bg-primary" : ""
@@ -152,7 +161,10 @@ const Sidebar = ({ active, setActive }) => {
                 </div>
               </div>
             </NavLink>
-            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+            <NavLink
+              to={`#`}
+              className="flex items-center group gap-[10px] pr-2"
+            >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
                   router === "#" ? "bg-primary" : ""
@@ -177,7 +189,10 @@ const Sidebar = ({ active, setActive }) => {
                 </div>
               </div>
             </NavLink>
-            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+            <NavLink
+              to={`#`}
+              className="flex items-center group gap-[10px] pr-2"
+            >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
                   router === "#" ? "bg-primary" : ""
@@ -205,7 +220,10 @@ const Sidebar = ({ active, setActive }) => {
           </div>
           <div className="flex  mt-10 gap-1 flex-col pr-4">
             {" "}
-            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+            <NavLink
+              to={`#`}
+              className="flex items-center group gap-[10px] pr-2"
+            >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
                   router === "#" ? "bg-primary" : ""
@@ -230,7 +248,10 @@ const Sidebar = ({ active, setActive }) => {
                 </div>
               </div>
             </NavLink>
-            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+            <NavLink
+              to={`#`}
+              className="flex items-center group gap-[10px] pr-2"
+            >
               <div
                 className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
                   router === "#" ? "bg-primary" : ""
