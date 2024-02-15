@@ -8,7 +8,7 @@ import { Flag2Icon } from "../common/icon";
 import Profile from "./Profile";
 import SendMoneyDropdown from "./SendMoneyDropdown";
 import QuickTransferDropdown from "./QuickTransferDropdown";
-import BtnCommon from "../common/BtnCommon";
+import CommonBtn from "../common/CommonBtn";
 
 const PaymentCard = () => {
   const [inputvalue, setInputvalue] = useState("12,4");
@@ -20,7 +20,7 @@ const PaymentCard = () => {
     setInputvalue2(event.target.value);
   };
   return (
-    <div className="bg-lynxwhite md:min-w-[270px]  mx-auto lg:mx-0 max-w-[378px] 2xl:max-w-[550px] w-full  pb-5">
+    <div className="bg-lynxwhite md:min-w-[270px]  mx-auto lg:mx-0 max-w-[378px] 2xl:max-w-[450px] w-full  pb-5">
       <div className="w-full mx-auto  ">
         <div className="w-full mx-auto rounded-[10px] border-[2px] border-unicornsilver bg-white p-4 xl:p-[24px_22px]">
           <h1 className="text-spanish font-bold text-[20px]">Quick Transfer</h1>
@@ -51,6 +51,7 @@ const PaymentCard = () => {
                     className="rounded-[10px]"
                     width={26}
                     height={26}
+                    alt="profile"
                   />
                 </div>
                 <div className="-ml-2">
@@ -58,6 +59,7 @@ const PaymentCard = () => {
                     src={profileImg}
                     className="rounded-[10px]"
                     width={26}
+                    alt="profile"
                     height={26}
                   />
                 </div>
@@ -71,6 +73,7 @@ const PaymentCard = () => {
             width={367}
             height={193}
             className="mt-[30px] w-full "
+            alt="visa"
           />
         </div>
         <h1 className="text-spanish mt-[30px] text-[20px] font-semibold">
@@ -81,7 +84,7 @@ const PaymentCard = () => {
         <div className="rounded-[10px] bg-white shadow-[0px_19.634px_39.268px_0px_rgba(122,122,122,0.20)] mt-[36px]">
           <div className="flex items-center gap-4 px-4 xl:px-[27px]">
             <>
-              <img src={img} width={26} height={26} />
+              <img src={img} width={26} height={26} alt="enter amount" />
             </>
 
             <label
@@ -106,7 +109,7 @@ const PaymentCard = () => {
             </div>
             <div className="flex w-[53px] items-center">
               <span className="w-[26px] h-[26px]">
-                <img src={flag} width={26} height={26} />
+                <img src={flag} width={26} height={26} alt="flag" />
               </span>
               <span className="-ml-2 w-[30px] flex items-center  h-[30px]">
                 <Flag2Icon />
@@ -118,7 +121,7 @@ const PaymentCard = () => {
           <Profile />
         </>
         <div className="mt-9">
-          <BtnCommon title=" Send Money" />
+          <CommonBtn title=" Send Money" />
         </div>
       </div>
     </div>

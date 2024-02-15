@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Eye2icon, Eyeicon, Passwordicon, Usericon } from "../common/icon";
 import { Link } from "react-router-dom";
 import Administrator from "./Administrator";
-import BtnCommon from "../common/BtnCommon";
+import CommonBtn from "../common/CommonBtn";
 const SignInForm = () => {
   const [pass, setPass] = useState(false);
 
@@ -68,7 +68,7 @@ const SignInForm = () => {
             </Link>
           </div>
           <div className="mt-8">
-            <BtnCommon title="Sign In" />
+            <CommonBtn title="Sign In" />
           </div>
           <p className="text-nouveau text-center text-[16px] mt-6 font-normal leading-[24px]">
             Don’t have an account?{" "}

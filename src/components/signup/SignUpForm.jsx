@@ -3,8 +3,8 @@ import Datepicker from "../common/Datepicker";
 import { Eye2icon, Eyeicon, Passwordicon } from "../common/icon";
 import { Link } from "react-router-dom";
 import Administrator from "../signin/Administrator";
-import BtnCommon from "../common/BtnCommon";
-const SignForm = () => {
+import CommonBtn from "../common/CommonBtn";
+const SignUpForm = () => {
   const [pass, setPass] = useState(false);
   const [password, setPassword] = useState(false);
   return (
@@ -137,7 +137,7 @@ const SignForm = () => {
             </div>
 
             <div className="mt-8">
-              <BtnCommon title={"Sign Up"} />
+              <CommonBtn title={"Sign Up"} />
             </div>
             <p className="text-nouveau text-center text-[16px] mt-6 font-normal leading-[24px]">
               Already have an account?{" "}
@@ -155,4 +155,4 @@ const SignForm = () => {
   );
 };
 
-export default SignForm;
+export default SignUpForm;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const BtnCommon = ({ title }) => {
+const CommonBtn = ({ title }) => {
   return (
     <>
       <button className="w-full border border-primary bg-primary h-[56px] text-white rounded-[9.421px] text-[19.73px] font-semibold hover:bg-transparent hover:text-primary transition duration-300 ease-in-out">
@@ -10,4 +10,4 @@ const BtnCommon = ({ title }) => {
   );
 };
 
-export default BtnCommon;
+export default CommonBtn;

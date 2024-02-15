@@ -2,13 +2,13 @@ import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { AdministratorIcon } from "../common/icon";
 
-const people = [
+const administrator = [
   { name: "Administrator" },
   { name: "Manager" },
   { name: "User" },
 ];
 const Administrator = () => {
-  const [selected, setSelected] = useState(people[0]);
+  const [selected, setSelected] = useState(administrator[0]);
   return (
     <>
       <div className="w-full">
@@ -27,7 +27,7 @@ const Administrator = () => {
               leaveTo="opacity-0"
             >
               <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
-                {people.map((person, personIdx) => (
+                {administrator.map((person, personIdx) => (
                   <Listbox.Option
                     key={personIdx}
                     className={({ active }) =>

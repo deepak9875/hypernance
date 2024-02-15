@@ -1,5 +1,6 @@
 import React from "react";
 import { CallIcon, DeleteIcon, EditIcon, MailIcon } from "../common/icon";
+import { Link } from "react-router-dom";
 const UserCard = ({ items }) => {
   return (
     <>
@@ -23,22 +24,22 @@ const UserCard = ({ items }) => {
           {items.name}
         </p>
         <div className="w-full h-[1px] my-6 bg-black/10"></div>
-        <a href="#" className="flex cursor-pointer items-center gap-2">
+        <Link to={`#`} className="flex cursor-pointer items-center gap-2">
           <span className="">
             <CallIcon />
           </span>
           <span className="text-[14px] font-medium leading-normal text-coarsewool">
             {items.phone}
           </span>
-        </a>
-        <a href="#" className="flex items-center cursor-pointer mt-4 gap-2">
+        </Link>
+        <Link to={`#`} className="flex items-center cursor-pointer mt-4 gap-2">
           <span className="cursor-pointer">
             <MailIcon />
           </span>
           <span className="text-[14px] font-medium leading-normal text-coarsewool">
             {items.email}
           </span>
-        </a>
+        </Link>
       </div>
     </>
   );

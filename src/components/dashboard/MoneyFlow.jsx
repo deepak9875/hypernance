@@ -53,13 +53,13 @@ const MoneyFlow = () => {
               <MonthDropdown />
             </div>
           </div>
-          <div className="flex justify-between items-center gap-[15px] flex-col lg:flex-row mt-[26px]">
+          <div className="flex justify-between items-center gap-[15px] flex-row sm:flex-col lg:flex-row mt-[26px]">
             <img
               src={Expensemap1}
               alt="Expensemap1 img"
               className="w-[188px] h-[149px] "
             />
-            <div className="flex max-lg:flex-row flex-col gap-5">
+            <div className="flex max-sm:flex-col max-lg:flex-row flex-col gap-5">
               <img
                 src={Expensemap2}
                 alt="Expensemap1 img"
