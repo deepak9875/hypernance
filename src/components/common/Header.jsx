@@ -17,7 +17,7 @@ const Header = ({ setActive }) => {
       content = "";
   }
   return (
-    <div className="w-full justify-between bg-[#240246] sm:bg-transparent sm:rounded-[16px] lg:pr-[70px] lg:rounded-[0px_32px_32px_0px] flex items-center gap-2 px-5 lg:px-0 lg:pl-[30px] py-3 lg:py-6">
+    <div className="w-full justify-between bg-magicWhale sm:bg-transparent sm:rounded-[16px] lg:pr-[70px] lg:rounded-[0px_32px_32px_0px] flex items-center gap-2 px-5 lg:px-0 lg:pl-[30px] py-3 lg:py-6">
       <h1 className="text-black text-[24px] hidden sm:block font-semibold">
         {content}
       </h1>
@@ -39,7 +39,7 @@ const Header = ({ setActive }) => {
               src={mainlogo}
               alt="main"
             />
-            <h2 className="text-[#171B26] cursor-pointer text-[16px] font-normal">
+            <h2 className="text-coarsewool cursor-pointer text-[16px] font-normal">
               Jordan Stlouis
             </h2>
           </div>

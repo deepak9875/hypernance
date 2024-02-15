@@ -4,7 +4,7 @@ import TransactionsTableList from "./TransactionsTableList";
 const TransactionsTable = () => {
   return (
     <>
-      <div className="  h-[300px]  bg-white overflow-auto w-full">
+      <div className="h-[300px] bg-white overflow-auto w-full">
         <table className="w-full  table-auto">
           <tbody>
             {tabelData.map((item, index) => (

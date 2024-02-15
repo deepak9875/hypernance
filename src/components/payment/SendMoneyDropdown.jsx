@@ -17,15 +17,15 @@ export default function SendMoneyDropdown() {
     <div className="w-full">
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
-          <Listbox.Button className="relative px-[18px] text-start mt-[13px] w-full h-[86px] cursor-default rounded-lg border-[1px] border-[#F6F8FB] bg-white">
+          <Listbox.Button className="relative px-[18px] text-start mt-[13px] w-full h-[86px] cursor-default rounded-lg border-[1px] border-boysenberry bg-white">
             <div>
               <div className="flex gap-4">
                 <Debit2Icon />
                 <div className="flex justify-between w-full">
-                  <span className="text-[#737780] justify-between font-semibold text-[18px]">
+                  <span className="text-noblesilver justify-between font-semibold text-[18px]">
                     {selected.name}
                   </span>
-                  <span className="text-[#737780] justify-between font-semibold text-[18px] pr-[25px]">
+                  <span className="text-noblesilver justify-between font-semibold text-[18px] pr-[25px]">
                     {selected.price}
                   </span>
                 </div>
@@ -53,10 +53,10 @@ export default function SendMoneyDropdown() {
                   {({ selected }) => (
                     <>
                       <span
-                        className={`flex justify-between w-full truncate  font-semibold text-[18px] cursor-pointer hover:text-white hover:bg-[#FF4CFF] py-2 pl-4 pr-4 ${
+                        className={`flex justify-between w-full truncate  font-semibold text-[18px] cursor-pointer hover:text-white hover:bg-primary py-2 pl-4 pr-4 ${
                           selected
                             ? "font-medium text-black "
-                            : "font-normal text-[#737780]"
+                            : "font-normal text-noblesilver"
                         }`}
                       >
                         {person.name}

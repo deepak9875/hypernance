@@ -8,12 +8,12 @@ const JoinNow = () => {
           <div>
             <p className="text-white text-[24px] lg:text-[31px] font-semibold leading-normal tracking-[0.93px]">
               Join Now & Cashback up to
-              <span className="text-[#FF4CFF]"> 60%</span> ✨
+              <span className="text-primary"> 60%</span> ✨
             </p>
           </div>
           <button
             type="submit"
-            className="w-[122px] h-[48px] rounded-[10px] bg-[#FED7FD] border border-[#FED7FD] hover:bg-transparent duration-300 text-[16px] font-medium leading-normal traacking-[0.48px] hover:text-[#FED7FD] text-black text-center"
+            className="w-[122px] h-[48px] rounded-[10px] bg-pinkdiamond border border-pinkdiamond hover:bg-transparent duration-300 text-[16px] font-medium leading-normal traacking-[0.48px] hover:text-pinkdiamond text-black text-center"
           >
             Get it now
           </button>

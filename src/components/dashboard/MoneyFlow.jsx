@@ -10,13 +10,13 @@ const MoneyFlow = () => {
   return (
     <>
       <div className="flex flex-col sm:flex-row md:flex-col justify-between   w-full xl:flex-row items-center gap-5 mt-[30px]">
-        <div className="p-5 rounded-[10px] border border-[#EBEBEB] bg-white w-full max-w-[355px]">
+        <div className="p-5 rounded-[10px] border border-mercury bg-white w-full">
           <div className="flex justify-between items-center">
             <div>
-              <p className=" font-medium text-[14px] text-[#141736] ">
+              <p className="font-medium text-[14px] text-spanish ">
                 Money Flow
               </p>
-              <div className=" w-[49px] h-[3px] bg-[#8707B1] rounded-[3px]"></div>
+              <div className="w-[49px] h-[3px] bg-shadeOfViolet rounded-[3px]"></div>
             </div>
             <div className="flex items-center gap-[17px]">
               <Arrowicon />
@@ -39,23 +39,21 @@ const MoneyFlow = () => {
             <img
               src={chart}
               alt="chart img"
-              className="w-[315px] h-[162px] mt-[13px]"
+              className="w-full h-[162px] mt-[13px]"
             />
           </div>
         </div>
-        <div className="p-5 rounded-[10px] border border-[#EBEBEB] bg-white w-full max-w-[355px]">
+        <div className="p-5 rounded-[10px] border border-mercury bg-white w-full">
           <div className="flex justify-between items-center">
             <div>
-              <p className=" font-medium text-[14px] text-[#141736] ">
-                Expense
-              </p>
-              <div className=" w-[37px] h-[2px] bg-[#8707B1] rounded-[8px]"></div>
+              <p className=" font-medium text-[14px] text-spanish ">Expense</p>
+              <div className=" w-[37px] h-[2px] bg-shadeOfViolet rounded-[8px]"></div>
             </div>
             <div>
               <MonthDropdown />
             </div>
           </div>
-          <div className="flex  items-center gap-[15px] flex-col lg:flex-row mt-[26px]">
+          <div className="flex justify-between items-center gap-[15px] flex-col lg:flex-row mt-[26px]">
             <img
               src={Expensemap1}
               alt="Expensemap1 img"
@@ -65,12 +63,12 @@ const MoneyFlow = () => {
               <img
                 src={Expensemap2}
                 alt="Expensemap1 img"
-                className="w-[104px] h-[82px] "
+                className="w-[104px] h-[82px]"
               />
               <img
                 src={Expensemap3}
                 alt="Expensemap1 img"
-                className="w-[104px] h-[82px] "
+                className="w-[104px] h-[82px]"
               />
             </div>
           </div>

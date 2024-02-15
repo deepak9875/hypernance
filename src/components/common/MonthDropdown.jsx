@@ -27,7 +27,7 @@ export default function MonthDropdown() {
         {({ open }) => (
           <>
             <form action="">
-              <Listbox.Button className="relative w-[58px] h-[24px] cursor-pointer text-black rounded-[3px] bg-[#FEE9FE] flex gap-1 items-center pl-2 ">
+              <Listbox.Button className="relative w-[58px] h-[24px] cursor-pointer text-black rounded-[3px] bg-dolomitecrystal flex gap-1 items-center pl-2 ">
                 <span className="block truncate text-[10px] font-medium ">
                   {selected.name}
                 </span>
@@ -48,7 +48,7 @@ export default function MonthDropdown() {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Listbox.Options className="!w-[58px] example h-[90px] absolute top-18 right-0 overflow-auto rounded-md text-black bg-[#FEE9FE] text-[10px] ">
+                <Listbox.Options className="!w-[58px] example h-[90px] absolute top-18 right-0 overflow-auto rounded-md text-black bg-dolomitecrystal text-[10px] ">
                   {people.map((person, personIdx) => (
                     <Listbox.Option
                       key={personIdx}

@@ -19,8 +19,8 @@ const Sidebar = ({ active, setActive }) => {
         <div className="w-full h-full absolute z-[40] bg-black/70 top-0 left-0 right-0 bottom-0"></div>
       )}
       <div
-        className={` lg:max-w-[240px] max-lg:absolute top-0 lg:top-0 h-full lg:min-h-full lg:max-h-full
-    3xl:max-w-[300px] w-full z-[999] bg-[#240246] transition-all duration-300  ease-in-out bg-primary pt-[25px] 
+        className={`lg:max-w-[240px] max-lg:absolute top-0 lg:top-0 h-full lg:min-h-full lg:max-h-full
+    3xl:max-w-[300px] w-full z-[999] bg-magicWhale transition-all duration-300  ease-in-out  pt-[25px] 
     ${
       active
         ? "left-0 transition duration-500 ease-in-out "
@@ -48,8 +48,8 @@ const Sidebar = ({ active, setActive }) => {
           <div className="flex  sm:pr-4 gap-1 flex-col ">
             <NavLink to={`/`} className="flex items-center group gap-[10px]">
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "/" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "/" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -60,9 +60,9 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Dashboardicon />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary   ${
                       router === "/"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >
@@ -76,8 +76,8 @@ const Sidebar = ({ active, setActive }) => {
               className="flex items-center group gap-[10px]"
             >
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "/users" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "/users" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -88,9 +88,9 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Usericons />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary   ${
                       router === "/users"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >
@@ -101,8 +101,8 @@ const Sidebar = ({ active, setActive }) => {
             </NavLink>
             <NavLink to={`#`} className="flex items-center group gap-[10px]">
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "#" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "#" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -113,24 +113,24 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Messagesicon />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary   ${
                       router === "#"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >
                     Messages
                   </h1>
                 </div>
-                <button className="bg-[#FF4CFF] h-[21px] w-[21px] rounded-full text-[13px] font-medium text-white">
+                <button className="bg-primary h-[21px] w-[21px] rounded-full text-[13px] font-medium text-white">
                   5
                 </button>
               </div>
             </NavLink>
             <NavLink to={`#`} className="flex items-center group gap-[10px]">
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "#" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "#" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -141,9 +141,9 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Walleticon />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary   ${
                       router === "#"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >
@@ -154,8 +154,8 @@ const Sidebar = ({ active, setActive }) => {
             </NavLink>
             <NavLink to={`#`} className="flex items-center group gap-[10px]">
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "#" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "#" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -166,9 +166,9 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Activityicon />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary   ${
                       router === "#"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >
@@ -179,8 +179,8 @@ const Sidebar = ({ active, setActive }) => {
             </NavLink>
             <NavLink to={`#`} className="flex items-center group gap-[10px]">
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "#" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "#" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -191,9 +191,9 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Analyticsicon />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary   ${
                       router === "#"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >
@@ -207,8 +207,8 @@ const Sidebar = ({ active, setActive }) => {
             {" "}
             <NavLink to={`#`} className="flex items-center group gap-[10px]">
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "#" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "#" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -219,9 +219,9 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Geticon />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary   ${
                       router === "#"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >
@@ -232,8 +232,8 @@ const Sidebar = ({ active, setActive }) => {
             </NavLink>
             <NavLink to={`#`} className="flex items-center group gap-[10px]">
               <div
-                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
-                  router === "#" ? "bg-[#FF4CFF]" : ""
+                className={`w-[4px] h-[33px] group-hover:bg-primary rounded-r-[8px] ${
+                  router === "#" ? "bg-primary" : ""
                 }`}
               ></div>
               <div
@@ -244,9 +244,9 @@ const Sidebar = ({ active, setActive }) => {
                 <div className="flex gap-[10px]  items-center">
                   <Settingsicon />
                   <h1
-                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                    className={`text-mercury text-[16px] group-hover:text-primary ${
                       router === "#"
-                        ? "text-[#FF4CFF] font-medium"
+                        ? "text-primary font-medium"
                         : " font-normal"
                     }`}
                   >

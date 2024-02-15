@@ -8,6 +8,7 @@ import { Flag2Icon } from "../common/icon";
 import Profile from "./Profile";
 import SendMoneyDropdown from "./SendMoneyDropdown";
 import QuickTransferDropdown from "./QuickTransferDropdown";
+import BtnCommon from "../common/BtnCommon";
 
 const PaymentCard = () => {
   const [inputvalue, setInputvalue] = useState("12,4");
@@ -19,18 +20,16 @@ const PaymentCard = () => {
     setInputvalue2(event.target.value);
   };
   return (
-    <div className="bg-[#F7F7F7] md:min-w-[270px]  mx-auto lg:mx-0 max-w-[378px] 2xl:max-w-[500px] w-full  pb-5 ">
-      <div className=" w-full mx-auto  ">
-        <div className=" w-full mx-auto rounded-[10px] border-[2px] border-[#E8E8E8] bg-white p-4 xl:p-[24px_22px]">
-          <h1 className="text-[#141736] font-bold text-[20px]">
-            Quick Transfer
-          </h1>
-          <div className="w-[49px] h-[3px] bg-[#8707B1] rounded-[3px]"></div>
+    <div className="bg-lynxwhite md:min-w-[270px]  mx-auto lg:mx-0 max-w-[378px] 2xl:max-w-[550px] w-full  pb-5">
+      <div className="w-full mx-auto  ">
+        <div className="w-full mx-auto rounded-[10px] border-[2px] border-unicornsilver bg-white p-4 xl:p-[24px_22px]">
+          <h1 className="text-spanish font-bold text-[20px]">Quick Transfer</h1>
+          <div className="w-[49px] h-[3px] bg-shadeOfViolet rounded-[3px]"></div>
           <QuickTransferDropdown />
-          <div className="rounded-[10px] border-[2px] border-[#FF4CFF] px-4  w-full mt-[30px] pt-[18px] pb-[7px]">
+          <div className="rounded-[10px] border-[2px] border-primary px-4  w-full mt-[30px] pt-[18px] pb-[7px]">
             <label
               htmlFor=""
-              className="outline-none w-full mt-[18px] text-[#A8B1BF] text-[18px] font-semibold"
+              className="outline-none w-full mt-[18px] text-grayagate text-[18px] font-semibold"
             >
               Enter amount
             </label>
@@ -38,7 +37,7 @@ const PaymentCard = () => {
               <div className="flex">
                 <span className="text-[26px] pr-1 font-semibold">$</span>
                 <input
-                  className="outline-none placeholder:text-[#3D424B] text-[26px] pr-2 font-semibold w-full"
+                  className="outline-none placeholder:text-blackbird text-[26px] pr-2 font-semibold w-full"
                   placeholder="12,4"
                   type="number"
                   value={inputvalue}
@@ -74,31 +73,31 @@ const PaymentCard = () => {
             className="mt-[30px] w-full "
           />
         </div>
-        <h1 className="text-[#141736] mt-[30px] text-[20px] font-semibold">
+        <h1 className="text-spanish mt-[30px] text-[20px] font-semibold">
           Send Money
         </h1>
-        <div className="bg-[#8707B1] max-w-[49px] rounded-[3px] w-full h-[3px]"></div>
+        <div className="bg-shadeOfViolet max-w-[49px] rounded-[3px] w-full h-[3px]"></div>
         <SendMoneyDropdown />
         <div className="rounded-[10px] bg-white shadow-[0px_19.634px_39.268px_0px_rgba(122,122,122,0.20)] mt-[36px]">
           <div className="flex items-center gap-4 px-4 xl:px-[27px]">
-            <div>
+            <>
               <img src={img} width={26} height={26} />
-            </div>
+            </>
 
             <label
               htmlFor=""
-              className="text-[#798BA3] mt-[10px] text-[18px] font-medium outline-none"
+              className="text-fadeddenim mt-[10px] text-[18px] font-medium outline-none"
             >
               Enter the amount
             </label>
           </div>
           <div className="flex items-center justify-between mt-[18px] px-4 xl:px-[30px] pb-[18px]">
             <div className="flex">
-              <span className="text-[37px] text-[#131635] font-semibold">
+              <span className="text-[37px] text-spanishroast font-semibold">
                 $
               </span>
               <input
-                className="outline-none pr-2 placeholder:text-[#131635] text-[#131635] text-[37px] font-semibold w-full"
+                className="outline-none pr-2 placeholder:text-spanishroast text-spanishroast text-[37px] font-semibold w-full"
                 placeholder="8000"
                 type="number"
                 value={inputvalue2}
@@ -115,15 +114,12 @@ const PaymentCard = () => {
             </div>
           </div>
         </div>
-        <div>
+        <>
           <Profile />
+        </>
+        <div className="mt-9">
+          <BtnCommon title=" Send Money" />
         </div>
-        <button
-          type="submit"
-          className="text-white text-[16px] font-bold leading-[24px] w-full p-4 mt-8 hover:bg-transparent duration-300 border border-[#FF4CFF] hover:text-black bg-[#FF4CFF] rounded-[8px]"
-        >
-          Send Money
-        </button>
       </div>
     </div>
   );

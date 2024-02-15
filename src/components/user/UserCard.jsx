@@ -3,7 +3,7 @@ import { CallIcon, DeleteIcon, EditIcon, MailIcon } from "../common/icon";
 const UserCard = ({ items }) => {
   return (
     <>
-      <div className=" sm:max-w-[267px] rounded-[10px] h-fit w-full p-6 bg-white border border-[rgba(0,0,0,0.10)]">
+      <div className="sm:max-w-[267px] rounded-[10px] h-fit w-full p-6 bg-white border border-[rgba(0,0,0,0.10)]">
         <div className="flex justify-between items-start">
           <img
             className="w-[82px] h-[82px] rounded-[50%] "
@@ -19,7 +19,7 @@ const UserCard = ({ items }) => {
             </span>
           </span>
         </div>
-        <p className="text-[20px] mt-[7.5px] font-medium leading-normal text-[#171B26] font-poppins">
+        <p className="text-[20px] mt-[7.5px] font-medium leading-normal text-coarsewool font-poppins">
           {items.name}
         </p>
         <div className="w-full h-[1px] my-6 bg-black/10"></div>
@@ -27,7 +27,7 @@ const UserCard = ({ items }) => {
           <span className="">
             <CallIcon />
           </span>
-          <span className="text-[14px] font-medium leading-normal text-[#171B26]">
+          <span className="text-[14px] font-medium leading-normal text-coarsewool">
             {items.phone}
           </span>
         </a>
@@ -35,7 +35,7 @@ const UserCard = ({ items }) => {
           <span className="cursor-pointer">
             <MailIcon />
           </span>
-          <span className="text-[14px] font-medium leading-normal text-[#171B26]">
+          <span className="text-[14px] font-medium leading-normal text-coarsewool">
             {items.email}
           </span>
         </a>

@@ -14,7 +14,7 @@ const Administrator = () => {
       <div className="w-full">
         <Listbox value={selected} onChange={setSelected}>
           <div className="relative">
-            <Listbox.Button className="relative cursor-pointer w-full text-[16px] font-medium text-[#040707] leading-6   bg-white py-3 border border-black/300 rounded-md pl-4 h-[48px] pr-6 text-left">
+            <Listbox.Button className="relative cursor-pointer w-full text-[16px] font-medium text-secondary leading-6   bg-white py-3 border border-black/300 rounded-md pl-4 h-[48px] pr-6 text-left">
               <span className="block truncate">{selected.name}</span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                 <AdministratorIcon />
@@ -32,7 +32,7 @@ const Administrator = () => {
                     key={personIdx}
                     className={({ active }) =>
                       `relative cursor-default select-none py-2 px-4 ${
-                        active ? "bg-[#FF4CFF] text-white" : "text-[#040707]"
+                        active ? "bg-primary text-white" : "text-secondary"
                       }`
                     }
                     value={person}

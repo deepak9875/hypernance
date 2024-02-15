@@ -8,7 +8,7 @@ export default function Profile() {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex items-center w-full justify-between ">
+              <Disclosure.Button className="flex items-center w-full justify-between">
                 <div className="flex gap-5">
                   <div>
                     <img src={img} width={35} height={35} alt="foter-img" />
