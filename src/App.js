@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Signin from "./page/Signin";
 import Signup from "./page/Signup";
-import Dashboard from "./Dashboard";
+import Dashboard from "./page/Dashboard";
 function App() {
   return (
     <>
@@ -11,7 +11,6 @@ function App() {
         <Route>
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
-
           <Route path="/" element={<Dashboard />} />
         </Route>
       </Routes>
