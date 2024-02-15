@@ -22,6 +22,30 @@ const EmailVerifyForm = () => {
               </p>
             </div>
 
+            <div className="flex items-center justify-between my-5">
+              <input
+                type="number"
+                maxLength={1}
+                autoFocus
+                className="bg-[#22272B]/10 w-16 h-16 lg:w-20 lg:h-20 rounded-xl text-black focus:border-primary focus:bg-primary/10 font-bold text-xl lg:text-2xl text-center"
+              />
+              <input
+                type="number"
+                maxLength={1}
+                className="bg-[#22272B]/10 w-16 h-16 lg:w-20 lg:h-20 rounded-xl text-black focus:border-primary focus:bg-primary/10 font-bold text-xl lg:text-2xl text-center"
+              />
+              <input
+                type="number"
+                maxLength={1}
+                className="bg-[#22272B]/10 w-16 h-16 lg:w-20 lg:h-20 rounded-xl text-black focus:border-primary focus:bg-primary/10 font-bold text-xl lg:text-2xl text-center"
+              />
+              <input
+                type="number"
+                maxLength={1}
+                className="bg-[#22272B]/10 w-16 h-16 lg:w-20 lg:h-20 rounded-xl text-black focus:border-primary focus:bg-primary/10 font-bold text-xl lg:text-2xl text-center"
+              />
+            </div>
+
             <p className="text-primary text-center text-base">
               Resend Code (5min)
             </p>
