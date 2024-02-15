@@ -10,7 +10,6 @@ const people = [
   { name: "Debit", price: "$14" },
   { name: "Debit", price: "$15" },
 ];
-
 export default function SendMoneyDropdown() {
   const [selected, setSelected] = useState(people[0]);
 

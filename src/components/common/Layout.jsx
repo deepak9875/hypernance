@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <div className="overflow-hidden h-screen flex  w-full mx-auto bg-[#F7F7F7]">
       <Sidebar active={active} setActive={setActive} />
-      <div className="max-w-[1556px] 4xl:max-w-full lg:min-h-full bg-[] lg:max-h-full overflow-hidden flex flex-col w-full relative">
+      <div className=" max-w-full lg:min-h-full  lg:max-h-full overflow-hidden flex flex-col w-full relative">
         <Header active={active} setActive={setActive} />
         <div className=" flex flex-col rbc-div lg:overflow-hidden overflow-auto lg:grow ">
           <div className="lg:grow flex flex-col rbc-div lg:min-h-full  lg:overflow-hidden">

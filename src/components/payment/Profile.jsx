@@ -25,9 +25,12 @@ export default function Profile() {
                   <PlusIcon />
                 </div>
               </Disclosure.Button>
-              <Disclosure.Panel className="text-[20px] mt-2 font-semibold bg-white rounded-xl p-4">
-                If you're unhappy with your purchase for any reason, email us
-                within 90 days and we'll refund you in full, no questions asked.
+              <Disclosure.Panel className="px-2">
+                <div className="text-[20px] mt-2 font-semibold bg-white rounded-xl p-4">
+                  If you're unhappy with your purchase for any reason, email us
+                  within 90 days and we'll refund you in full, no questions
+                  asked.
+                </div>
               </Disclosure.Panel>
             </>
           )}

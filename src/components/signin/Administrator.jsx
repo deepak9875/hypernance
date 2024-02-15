@@ -7,16 +7,14 @@ const people = [
   { name: "Manager" },
   { name: "User" },
 ];
-
 const Administrator = () => {
   const [selected, setSelected] = useState(people[0]);
-
   return (
     <>
       <div className="w-full">
         <Listbox value={selected} onChange={setSelected}>
           <div className="relative">
-            <Listbox.Button className="relative w-full text-[16px] font-medium text-[#040707] leading-6 cursor-default  bg-white py-3 border border-black/300 rounded-md pl-4 h-[48px] pr-6 text-left">
+            <Listbox.Button className="relative cursor-pointer w-full text-[16px] font-medium text-[#040707] leading-6   bg-white py-3 border border-black/300 rounded-md pl-4 h-[48px] pr-6 text-left">
               <span className="block truncate">{selected.name}</span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                 <AdministratorIcon />
@@ -33,7 +31,7 @@ const Administrator = () => {
                   <Listbox.Option
                     key={personIdx}
                     className={({ active }) =>
-                      `relative cursor-default select-none py-2 pl-10 pr-4 ${
+                      `relative cursor-default select-none py-2 px-4 ${
                         active ? "bg-[#FF4CFF] text-white" : "text-[#040707]"
                       }`
                     }
@@ -42,8 +40,8 @@ const Administrator = () => {
                     {({ selected }) => (
                       <>
                         <span
-                          className={`block truncate ${
-                            selected ? "font-medium" : "font-normal"
+                          className={`block truncate text-[16px] font-medium cursor-pointer ${
+                            selected ? "" : ""
                           }`}
                         >
                           {person.name}

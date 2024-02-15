@@ -1,16 +1,13 @@
 import React from "react";
 import UserCard from "./UserCard";
+import { usersData } from "../common/Helper";
 
 const AllUserCards = () => {
   return (
-    <div className="flex flex-wrap px-7 overflow-auto py-7 h-full gap-6">
-      <UserCard />
-      <UserCard />
-      <UserCard />
-      <UserCard />
-      <UserCard />
-      <UserCard />
-      <UserCard />
+    <div className="flex flex-wrap justify-between xl:justify-normal w-full   pt-5 gap-6">
+      {usersData.map((item, index) => (
+        <UserCard items={item} key={index} />
+      ))}
     </div>
   );
 };

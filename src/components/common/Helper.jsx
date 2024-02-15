@@ -1,6 +1,21 @@
 import { Electricicon } from "./icon";
+import userImg from "../../assets/img/user-img.png";
 
 export const tabelData = [
+  {
+    icon: <Electricicon />,
+    name: "Electricity",
+    date: "21 july",
+    time: "09:00",
+    amount: "+$234.87",
+  },
+  {
+    icon: <Electricicon />,
+    name: "Electricity",
+    date: "21 july",
+    time: "09:00",
+    amount: "+$234.87",
+  },
   {
     icon: <Electricicon />,
     name: "Electricity",
@@ -35,5 +50,61 @@ export const tabelData = [
     date: "31 july",
     time: "04:00",
     amount: "+$190.88",
+  },
+];
+export const usersData = [
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
+  },
+  {
+    img: userImg,
+    name: "Jordan Stlouis",
+    phone: "(684) 555-0102",
+    email: "lawson@example.com",
   },
 ];

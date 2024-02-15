@@ -1,3 +1,4 @@
+import { NavLink, useLocation } from "react-router-dom";
 import minilogo from "../../assets/img/minilogo.png";
 import {
   Activityicon,
@@ -5,13 +6,13 @@ import {
   Crossicon,
   Dashboardicon,
   Geticon,
-  Invoicesicon,
   Messagesicon,
   Settingsicon,
   Usericons,
   Walleticon,
 } from "./icon";
 const Sidebar = ({ active, setActive }) => {
+  const router = useLocation().pathname;
   return (
     <>
       {active && (
@@ -44,35 +45,80 @@ const Sidebar = ({ active, setActive }) => {
           </div>
         </div>
         <div className="flex flex-col mt-[22px] sm:w-[250px] lg:w-full h-[80%]  overflow-auto sm:h-full justify-between sm:pb-[90px]">
-          <div className="flex  sm:pr-4 flex-col ">
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+          <div className="flex  sm:pr-4 gap-1 flex-col ">
+            <NavLink to={`/`} className="flex items-center group gap-[10px]">
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "/" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "/" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Dashboardicon />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "/"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     Dashboard{" "}
                   </h1>
                 </div>
               </div>
-            </div>
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+            </NavLink>
+            <NavLink
+              to={`/users`}
+              className="flex items-center group gap-[10px]"
+            >
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "/users" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "/users" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Usericons />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "/users"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     Users{" "}
                   </h1>
                 </div>
               </div>
-            </div>
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+            </NavLink>
+            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "#" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "#" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Messagesicon />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "#"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     Messages
                   </h1>
                 </div>
@@ -80,66 +126,135 @@ const Sidebar = ({ active, setActive }) => {
                   5
                 </button>
               </div>
-            </div>
-
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+            </NavLink>
+            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "#" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "#" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Walleticon />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "#"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     My Wallets
                   </h1>
                 </div>
               </div>
-            </div>
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+            </NavLink>
+            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "#" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "#" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Activityicon />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "#"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     Activity
                   </h1>
                 </div>
               </div>
-            </div>
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+            </NavLink>
+            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "#" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "#" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Analyticsicon />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "#"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     Analytics
                   </h1>
                 </div>
               </div>
-            </div>
+            </NavLink>
           </div>
-          <div className="flex  mt-10  flex-col pr-4">
+          <div className="flex  mt-10 gap-1 flex-col pr-4">
             {" "}
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "#" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "#" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Geticon />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "#"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     Get Help
                   </h1>
                 </div>
               </div>
-            </div>
-            <div className="flex items-center group gap-[10px]">
-              <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
-              <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
+            </NavLink>
+            <NavLink to={`#`} className="flex items-center group gap-[10px]">
+              <div
+                className={`w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px] ${
+                  router === "#" ? "bg-[#FF4CFF]" : ""
+                }`}
+              ></div>
+              <div
+                className={`w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex ${
+                  router === "#" ? "bg-[rgba(246,248,249,0.20)]" : ""
+                }`}
+              >
                 <div className="flex gap-[10px]  items-center">
                   <Settingsicon />
-                  <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
+                  <h1
+                    className={`text-[#EBEBEB] text-[16px] group-hover:text-[#FF4CFF]   ${
+                      router === "#"
+                        ? "text-[#FF4CFF] font-medium"
+                        : " font-normal"
+                    }`}
+                  >
                     Settings
                   </h1>
                 </div>
               </div>
-            </div>
+            </NavLink>
           </div>
         </div>
       </div>
