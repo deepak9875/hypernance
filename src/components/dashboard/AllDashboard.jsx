@@ -11,13 +11,16 @@ import DashboardTablecard from "./DashboardTableCard";
 const AllDashboard = () => {
   return (
     <>
-      <div className="flex gap-5 w-full h-full  flex-col lg:flex-row ">
-        <div className=" max-lg:mb-[350px] scrollbar  h-full ">
-          <div className="h-[50%] overflow-auto">
-            <div className="background-join2 sm:background-join bg-center bg-cover bg-no-repeat h-[237px] w-full lg:max-w-[740px] pl-5 sm:pl-[46px] pt-[30px] sm:pt-[39px] pr-[40px] rounded-[10px]">
+      <h1 className="text-black sm:hidden text-[24px] font-semibold">
+        Dashboard
+      </h1>
+      <div className="flex gap-5 w-full h-fit lg:h-full md:max-w-[740px] md:min-w-[400px] lg:min-w-[455px] flex-col lg:flex-row ">
+        <div className="  w-full scrollbar  h-full ">
+          <div className="lg:h-[58%] w-full  lg:overflow-auto">
+            <div className="background-join2 sm:background-join bg-center bg-cover bg-no-repeat h-[237px] w-full  pl-5 sm:pl-[46px] pt-[30px] sm:pt-[39px] pr-[40px] rounded-[10px]">
               <div className="flex flex-col gap-5 items-start justify-start max-w-[400px] w-full">
                 <div>
-                  <p className="text-white text-[24px] sm:text-[31px] font-semibold leading-normal tracking-[0.93px]">
+                  <p className="text-white text-[24px] lg:text-[31px] font-semibold leading-normal tracking-[0.93px]">
                     Join Now & Cashback up to
                     <span className="text-[#FF4CFF]"> 60%</span> ✨
                   </p>
@@ -32,8 +35,8 @@ const AllDashboard = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-between sm:flex-row items-center gap-[29px] mt-[30px]">
-              <div className="p-5 rounded-[10px] border border-[#EBEBEB] bg-white w-[355px]">
+            <div className="flex flex-col sm:flex-row md:flex-col justify-between   w-full xl:flex-row items-center gap-5 mt-[30px]">
+              <div className="p-5 rounded-[10px] border border-[#EBEBEB] bg-white w-full max-w-[355px]">
                 <div className="flex justify-between items-center">
                   <div>
                     <p className=" font-medium text-[14px] text-[#141736] ">
@@ -66,7 +69,7 @@ const AllDashboard = () => {
                   />
                 </div>
               </div>
-              <div className="p-5 rounded-[10px] border border-[#EBEBEB] bg-white w-[355px]">
+              <div className="p-5 rounded-[10px] border border-[#EBEBEB] bg-white w-full max-w-[355px]">
                 <div className="flex justify-between items-center">
                   <div>
                     <p className=" font-medium text-[14px] text-[#141736] ">
@@ -78,7 +81,7 @@ const AllDashboard = () => {
                     <MonthDropdown />
                   </div>
                 </div>
-                <div className="flex flex-col xl:flex-row items-center gap-[15px] mt-[26px]">
+                <div className="flex  items-center gap-[15px] flex-col lg:flex-row mt-[26px]">
                   <img
                     src={Expensemap1}
                     alt="Expensemap1 img"
@@ -100,7 +103,7 @@ const AllDashboard = () => {
               </div>
             </div>
           </div>
-          <div className="mt-[30px] w-full h-[40%] overflow-auto ">
+          <div className="mt-[30px] w-full lg:h-[35%] lg:overflow-auto ">
             <DashboardTablecard />
           </div>
         </div>

@@ -20,9 +20,9 @@ const PaymentCard = () => {
     setInputvalue2(event.target.value);
   };
   return (
-    <div className="bg-[#F7F7F7] max-w-[378px] pr-1 h-[82%] overflow-auto">
-      <div className=" w-full mx-auto max-sm:px-3">
-        <div className=" w-full mx-auto rounded-[10px] border-[2px] border-[#E8E8E8] bg-white p-[15px_10px] sm:p-[24px_22px]">
+    <div className="bg-[#F7F7F7] md:min-w-[270px]  mx-auto max-w-[378px] w-full sm:pr-1 h-fit lg:h-[95%] pb-5 overflow-auto">
+      <div className=" w-full mx-auto  ">
+        <div className=" w-full mx-auto rounded-[10px] border-[2px] border-[#E8E8E8] bg-white p-4 xl:p-[24px_22px]">
           <h1 className="text-[#141736] font-bold text-[20px]">
             Quick Transfer
           </h1>
@@ -74,7 +74,7 @@ const PaymentCard = () => {
         <div className="bg-[#8707B1] max-w-[49px] w-full h-[2px]"></div>
         <SendMoneyDropdown />
         <div className="rounded-[10px] bg-white shadow-[0px_19.634px_39.268px_0px_rgba(122,122,122,0.20)] mt-[36px]">
-          <div className="flex items-center gap-4 px-[27px]">
+          <div className="flex items-center gap-4 px-4 xl:px-[27px]">
             <div>
               <img src={img} width={26} height={26} />
             </div>
@@ -86,7 +86,7 @@ const PaymentCard = () => {
               Enter the amount
             </label>
           </div>
-          <div className="flex items-center justify-between mt-[18px] px-[30px] pb-[18px]">
+          <div className="flex items-center justify-between mt-[18px] px-4 xl:px-[30px] pb-[18px]">
             <div className="flex">
               <span className="text-[37px] text-[#131635] font-semibold">
                 $

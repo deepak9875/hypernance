@@ -58,7 +58,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
-  border-radius: 10px;
+  height: 5px;
 }
 
 /* Track */

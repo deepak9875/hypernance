@@ -4,11 +4,8 @@ import { AdministratorIcon } from "../common/icon";
 
 const people = [
   { name: "Administrator" },
-  { name: "Administrator1" },
-  { name: "Administrator2" },
-  { name: "Administrator3" },
-  { name: "Administrator4" },
-  { name: "Administrator5" },
+  { name: "Manager" },
+  { name: "User" },
 ];
 
 const Administrator = () => {

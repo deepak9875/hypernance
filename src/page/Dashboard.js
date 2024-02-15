@@ -7,9 +7,8 @@ import AllDashboard from "../components/dashboard/AllDashboard";
 const Dashboard = () => {
   return (
     <Layout>
-      <div className="flex w-full px-[30px] gap-5">
+      <div className="flex w-full md:flex-row mt-3 sm:mt-10 lg:mt-0 flex-col max-w-full h-full px-4 xl:px-[30px] gap-5">
         <AllDashboard />
-        {/* <AllUserCards /> */}
         <PaymentCard />
       </div>
     </Layout>

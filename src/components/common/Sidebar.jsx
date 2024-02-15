@@ -8,6 +8,7 @@ import {
   Invoicesicon,
   Messagesicon,
   Settingsicon,
+  Usericons,
   Walleticon,
 } from "./icon";
 const Sidebar = ({ active, setActive }) => {
@@ -42,8 +43,8 @@ const Sidebar = ({ active, setActive }) => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col w-[250px] lg:w-full h-full justify-between pb-[90px]">
-          <div className="flex mt-[22px] pr-4 flex-col ">
+        <div className="flex flex-col mt-[22px] sm:w-[250px] lg:w-full h-[80%]  overflow-auto sm:h-full justify-between sm:pb-[90px]">
+          <div className="flex  sm:pr-4 flex-col ">
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
               <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
@@ -59,9 +60,9 @@ const Sidebar = ({ active, setActive }) => {
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>
               <div className="w-full  gap-1 px-[15px] py-3 cursor-pointer items-center justify-between   rounded-[6px] hover:bg-[rgba(246,248,249,0.20)] flex">
                 <div className="flex gap-[10px]  items-center">
-                  <Invoicesicon />
+                  <Usericons />
                   <h1 className="text-[#EBEBEB] text-[16px] font-normal group-hover:text-[#FF4CFF] group-hover:font-medium">
-                    Invoices{" "}
+                    Users{" "}
                   </h1>
                 </div>
               </div>
@@ -115,7 +116,7 @@ const Sidebar = ({ active, setActive }) => {
               </div>
             </div>
           </div>
-          <div className="flex   flex-col pr-4">
+          <div className="flex  mt-10  flex-col pr-4">
             {" "}
             <div className="flex items-center group gap-[10px]">
               <div className="w-[4px] h-[33px] group-hover:bg-[#FF4CFF] rounded-r-[8px]"></div>

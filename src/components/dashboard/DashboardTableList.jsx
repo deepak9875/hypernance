@@ -1,7 +1,7 @@
 const DashboardTableList = ({ item }) => {
   return (
     <>
-      <tr className=" h-[90px] hover:bg-[#8707B1] group  max-lg:justify-between  rounded-[12px] flex gap-5 lg:gap-[68px] sm:gap-10   py-6 px-5 text-black items-center hover:text-white">
+      <tr className=" h-[59px] hover:bg-[#8707B1] group  max-lg:justify-between  rounded-[12px] flex gap-5 lg:gap-[68px] sm:gap-10   px-5 text-black items-center hover:text-white">
         <td className="flex gap-[18px] items-center w-[130px] ">
           {item.icon}
           <p className="text-[14px] font-normal  ">{item.name}</p>
