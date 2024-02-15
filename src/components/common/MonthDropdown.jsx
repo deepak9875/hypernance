@@ -48,7 +48,7 @@ export default function MonthDropdown() {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Listbox.Options className="!w-[58px] example h-[200px] absolute top-18 right-0 overflow-auto rounded-md text-black bg-[#FEE9FE] text-[10px] ">
+                <Listbox.Options className="!w-[58px] example h-[90px] absolute top-18 right-0 overflow-auto rounded-md text-black bg-[#FEE9FE] text-[10px] ">
                   {people.map((person, personIdx) => (
                     <Listbox.Option
                       key={personIdx}
